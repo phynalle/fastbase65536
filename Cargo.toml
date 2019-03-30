@@ -3,6 +3,7 @@ name = "fastbase65536"
 version = "0.1.0"
 authors = ["phynalle <phynalism@gmail.com>"]
 edition = "2018"
+license = "MIT"
 
 [dependencies.base65536]
 git = "https://github.com/phynalle/base65536"
