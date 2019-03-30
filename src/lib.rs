@@ -20,7 +20,7 @@ fn decode(input: String) -> PyResult<Bytes> {
 }
 
 #[pymodule]
-fn fastbase65536(_py: Python<'_>, m: &PyModule) -> PyResult<()> {
+fn base65536(_py: Python<'_>, m: &PyModule) -> PyResult<()> {
     m.add_wrapped(wrap_pyfunction!(encode))?;
     m.add_wrapped(wrap_pyfunction!(decode))?;
     Ok(())
