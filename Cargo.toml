@@ -1,0 +1,13 @@
+[package]
+name = "fastbase65536"
+version = "0.1.0"
+authors = ["phynalle <phynalism@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+base65536 = { path = "./base65536" }
+pyo3 = { version = "0.6.0", features = ["extension-module"] }
+
+[lib]
+name = "fastbase65536"
+crate-type = ["cdylib"]
