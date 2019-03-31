@@ -13,7 +13,7 @@ fn encode(input: Vec<u8>) -> PyResult<String> {
 }
 
 #[pyfunction]
-fn decode(input: String) -> PyResult<Bytes> {
+fn decode(input: &str) -> PyResult<Bytes> {
     base65536::decode(&input, false)
         .map(Bytes)
         .map_err(|e| ValueError::py_err(format!("{}", e)))
